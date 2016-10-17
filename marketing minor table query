@@ -1,0 +1,33 @@
+drop table marketing_minor;
+create table marketing_minor
+	(course_number varchar(6) NOT NULL,
+	course_title varchar(100) NOT NULL,
+	course_description varchar (255),
+	requirement bit,
+	elective bit,
+	course_dept varchar(100),
+	course_prereq varchar (90),
+	PRIMARY KEY (course_number));
+INSERT INTO marketing_minor VALUES ('MK321', 'Consumer Behavior', 'Covers the process of consumer decision making, the individual and group influences on consumber behavior, and implications of consumer behavior.', 1, 0, 'Marketing', 'GB301 or GB214'); 
+INSERT INTO marketing_minor VALUES ('MK322', 'Marketing Research', 'Tools and techniques of marketing research.', 1, 0, 'Marketing', 'GB301 or GB214, GB213 (can be taken as corequisite)');
+INSERT INTO marketing_minor VALUES ('MK332', 'Promotional Strategy', 'Explored promotional goals and process as they relate to marketing.', 1, 0, 'Marketing', 'GB301 or GB214');
+INSERT INTO marketing_minor VALUES ('MK334', 'Marketing Channels', 'Description Not Available', 1, 0, 'Marketing', 'Prerequisites Not Available');
+INSERT INTO marketing_minor VALUES ('MK330', 'New Product Development and Marketing', 'The role of new products in the survival and growth of organizations.', 0, 1, 'Marketing', 'GB301 or GB214');
+INSERT INTO marketing_minor VALUES ('MK411', 'Marketing Project', 'Focuses on design, develpment, and execution of a marketing project with a team and client.', 0, 1, 'Marketing', 'GB310 or MK160, and senior-level standing');
+INSERT INTO marketing_minor VALUES ('COM321', 'Mass Communication', 'Analysis of mass media, primarily electronic and print,, focusing on major theoretical perspectives.', 0, 1, 'Communications', 'None');
+INSERT INTO marketing_minor VALUES ('COM322', 'Theories of Persuasion', 'Study of persuasion in writing and mass media.', 0, 1, 'Communications', 'None');
+INSERT INTO marketing_minor VALUES ('GLS114', 'Cross Cultural Understanding', 'An introduction to effective communication between people of different cultures', 0, 1, 'Global Studies', 'None');
+INSERT INTO marketing_minor VALUES ('ID213', 'Communication and Gender: Meanings in Form and Content', 'Analysis of gender communication in mass media and business.', 0, 1, 'Interdiciplinary Studies', 'None');
+INSERT INTO marketing_minor VALUES ('LA103', 'Consumer Law', 'Analysis and exploration of laws that protect and encourage consummerism.', 0, 1, 'Law', 'None');
+INSERT INTO marketing_minor VALUES ('LA109', 'Law and Ethics of Cyber Society', 'Analysis and exploration of laws pertaining to online interactions.', 0, 1, 'Law', 'None');
+INSERT INTO marketing_minor VALUES ('MA252', 'Mathmatical Statistics', 'Focus on statistical concepts that underly regression analysis.', 0, 1, 'Mathematical Sciences', '(MA139 or MA141) and (GB210 or GB213)');
+INSERT INTO marketing_minor VALUES ('MC200', 'Introduction to Media Theory', 'Analysis of media impact on our lives and behavior.', 0, 1, 'Media and Culture', 'None');
+INSERT INTO marketing_minor VALUES ('MC250', 'Principles of Globalization and Media', 'Exlores internation media industries, products, and audiences as an intro to multinational and multiethnic culture.', 0, 1, 'Media and Culture', 'None');
+INSERT INTO marketing_minor VALUES ('MC300', 'Selected Topics in Media Studies', 'Examines varying media themese in film, television, and new media.', 0, 1, 'Media and Culture', 'None, course allows repetition for credit');
+INSERT INTO marketing_minor VALUES ('PH130', 'Corporate Social Responsibility', 'Examines the various meanings of corporate social responsibility by looking at the nature of the corporation and the character structure of its managers, both historically and in the present.', 0, 1, 'Philosophy', 'PH101 or instructor permission');
+INSERT INTO marketing_minor VALUES ('PH133', 'International Business Ethics', 'Explores ethical issues confronted by corporations operating in the global marketplace, where laws, moral standards and cultural customs can vary widely from country to country. ', 0, 1, 'Philosophy', 'PH101 or instructor permission');
+INSERT INTO marketing_minor VALUES ('PS311', 'Social Psychology', 'Investigates our shared human experience studying the impact of interaction with other individuals, groups and the social context upon individual thinking, emotions and behavior.', 0, 1, 'Psycology', 'None');
+INSERT INTO marketing_minor VALUES ('PS325', 'Cyber Psycology', 'Cyber Psychology examines the influences of information technology on human behavior. ', 0, 1, 'Psycology', 'None');
+INSERT INTO marketing_minor VALUES ('SO287', 'Media, Culture, and Society', 'Examines how various forms of modern mass media represent the values and lifestyles of American culture, and how we experience the mass media in our everyday lives. ', 0, 1, 'Sociology', 'None');
+INSERT INTO marketing_minor VALUES ('SO289', 'Popular Culture in Consumer Societies', 'Explores cultural dimensions of social life associated with development of consumerism in contemporary societies. The emergence of a "consumer society" and corresponding cultural sphere will be outlined.', 0, 1, 'Sociology', 'None');
+INSERT INTO marketing_minor VALUES ('ST242', 'Applied Business Statistics', 'Presents a practical development of several advanced methods of statistical inference that are useful in a wide range of business contexts.', 0, 1, 'Statistics', '(MA 126 or MA 139 or MA 141) and (GB 210 or GB 213)');
